@@ -3,11 +3,13 @@ import react from '@vitejs/plugin-react';
 import { visualizer } from 'rollup-plugin-visualizer';
 import path from 'path';
 import UnpluginInjectPreload from 'unplugin-inject-preload/vite';
+import { schemaSync } from './schema-sync/vite-plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [
         react(),
+        schemaSync(),
         visualizer({
             filename: './stats/stats.html',
             open: false,

@@ -25,3 +25,5 @@ dist-ssr
 
 .env
 stats/
+# schema-sync: the synced diagram holds a private schema
+schema-sync/diagram.json
